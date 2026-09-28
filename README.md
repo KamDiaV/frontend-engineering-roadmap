@@ -24,9 +24,9 @@ My long-term roadmap to becoming a frontend systems engineer.
 
 #### Theory & Interview Preparation
 
-- [ ]  HTML — 51 / 100+ Questions
+- [ ]  HTML — 66 / 100+ Questions
 - [I. База — 13 / 13](./theory/html/base.md)
-- [II.Структура HTML-документа — 0 / 15](./theory/html/document-structure.md)
+- [II.Структура HTML-документа — 15 / 15](./theory/html/document-structure.md)
 
 - [V. Ссылки и навигация — 10 / 10](./theory/html/links-navigation.md)
 - [VI. Изображения и медиа — 14 / 14](./theory/html/images-media.md)
