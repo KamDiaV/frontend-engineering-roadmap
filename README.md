@@ -38,7 +38,7 @@ My long-term roadmap to becoming a frontend systems engineer.
 
 - [VIII. Accessibility и ARIA — 18](./theory/html/accessibility-aria.md)
 - [IX. Таблицы — 7](./theory/html/tables.md)
-- [X. Современный HTML — 13](./theory/html/modern-html.md)
+- [X. Современный HTML — 14](./theory/html/modern-html.md)
 
 - [ ] CSS
 
