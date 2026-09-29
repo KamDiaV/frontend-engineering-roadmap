@@ -24,7 +24,8 @@ My long-term roadmap to becoming a frontend systems engineer.
 
 #### Theory & Interview Preparation
 
-- [ ]  HTML — 100+ Questions
+- [x]  HTML
+
 - [I. База — 13](./theory/html/base.md)
 - [II.Структура HTML-документа — 15](./theory/html/document-structure.md)
 - [III. Семантическая HTML-разметка — 20](./theory/html/semantic-html.md)
@@ -32,6 +33,12 @@ My long-term roadmap to becoming a frontend systems engineer.
 - [V. Ссылки и навигация — 10](./theory/html/links-navigation.md)
 - [VI. Изображения и медиа — 14](./theory/html/images-media.md)
 - [VII. Формы — 14](./theory/html/forms.md)
+
+- [ ] Advanced HTML
+
+- [VIII. Accessibility и ARIA — 18](./theory/html/accessibility-aria.md)
+- [IX. Таблицы — 7](./theory/html/tables.md)
+- [X. Современный HTML — 13](./theory/html/modern-html.md)
 
 - [ ] CSS
 
