@@ -34,11 +34,15 @@ My long-term roadmap to becoming a frontend systems engineer.
 - [VI. Изображения и медиа — 14](./theory/html/images-media.md)
 - [VII. Формы — 14](./theory/html/forms.md)
 
-- [ ] Advanced HTML
+- [x] Advanced HTML
 
 - [VIII. Accessibility и ARIA — 18](./theory/html/accessibility-aria.md)
 - [IX. Таблицы — 7](./theory/html/tables.md)
 - [X. Современный HTML — 14](./theory/html/modern-html.md)
+
+- [x] HTML Practice & Interview Cases
+
+- [XI. Практические вопросы — 12](./theory/html/practical-questions.md)
 
 - [ ] CSS
 
