@@ -615,3 +615,379 @@ auto   → стандартное поведение и light dismiss
 manual → ручное управление
 hint   → временный вспомогательный popover
 ```
+
+### 15. Что такое Web Components и из каких основных технологий они состоят?
+
+**Web Components** — набор стандартных технологий веб-платформы для создания переиспользуемых пользовательских HTML-компонентов с собственной структурой и поведением.
+
+Например, разработчик может создать собственный элемент:
+
+```html
+<user-card></user-card>
+```
+
+и использовать его в HTML подобно встроенным элементам.
+
+Основные технологии Web Components:
+
+```text
+Web Components
+├── Custom Elements
+├── Shadow DOM
+└── HTML Templates
+    ├── <template>
+    └── <slot>
+```
+
+### Custom Elements
+
+Позволяют создавать собственные HTML-элементы:
+
+```html
+<user-card></user-card>
+```
+
+и определять их поведение через JavaScript.
+
+### Shadow DOM
+
+Позволяет создать внутреннее DOM-дерево компонента и изолировать его структуру и стили от основной страницы.
+
+### `<template>`
+
+Позволяет хранить шаблон разметки, который можно использовать при создании компонента.
+
+### `<slot>`
+
+Определяет места, куда пользователь компонента может передать собственное содержимое.
+
+Например:
+
+```html
+<user-card>
+  <span slot="name">
+    Diana
+  </span>
+</user-card>
+```
+
+Эти технологии могут использоваться вместе, но не обязательно каждый Web Component должен применять их все.
+
+#### Короче
+
+Web Components — стандартный набор технологий для создания переиспользуемых пользовательских HTML-компонентов.
+
+Основные части:
+
+```text
+Custom Elements
+Shadow DOM
+<template>
+<slot>
+```
+
+---
+
+### 16. Что такое Shadow DOM и зачем он нужен?
+
+**Shadow DOM** — механизм, позволяющий прикрепить к элементу отдельное внутреннее DOM-дерево.
+
+Элемент, к которому прикреплён Shadow DOM, называется **shadow host**.
+
+Например:
+
+```html
+<user-card></user-card>
+```
+
+JavaScript:
+
+```js
+const card =
+  document.querySelector('user-card');
+
+const shadow =
+  card.attachShadow({
+    mode: 'open'
+  });
+
+shadow.innerHTML = `
+  <style>
+    p {
+      color: red;
+    }
+  </style>
+
+  <p>User card</p>
+`;
+```
+
+Получается концептуальная структура:
+
+```text
+<user-card>             ← shadow host
+└── #shadow-root
+    ├── style
+    └── p
+```
+
+Главная задача Shadow DOM — **инкапсуляция**.
+
+Например, CSS страницы:
+
+```css
+p {
+  color: blue;
+}
+```
+
+обычно не начинает напрямую стилизовать `<p>` внутри shadow tree.
+
+И наоборот, внутренний:
+
+```css
+p {
+  color: red;
+}
+```
+
+не применяется ко всем `<p>` основной страницы.
+
+Это помогает создавать компоненты, внутренняя реализация которых меньше зависит от CSS и структуры окружающей страницы.
+
+Shadow DOM может создаваться:
+
+- программно через `attachShadow()`;
+- декларативно через `<template shadowrootmode="...">` в поддерживаемом современном HTML.
+
+#### Короче
+
+Shadow DOM — отдельное внутреннее DOM-дерево элемента.
+
+Он используется для инкапсуляции структуры и стилей компонента и уменьшает конфликты с основной страницей.
+
+---
+
+### 17. Что такое Custom Elements?
+
+**Custom Elements** — часть Web Components, позволяющая создавать собственные HTML-элементы и определять их поведение через JavaScript.
+
+Например, можно создать:
+
+```html
+<user-card></user-card>
+```
+
+JavaScript:
+
+```js
+class UserCard extends HTMLElement {
+  constructor() {
+    super();
+  }
+}
+
+customElements.define(
+  'user-card',
+  UserCard
+);
+```
+
+После регистрации браузер знает, что:
+
+```html
+<user-card>
+```
+
+соответствует классу:
+
+```js
+UserCard
+```
+
+Имя автономного custom element должно содержать дефис:
+
+```text
+user-card
+product-card
+app-menu
+```
+
+Это позволяет отличать пользовательские элементы от встроенных HTML-элементов.
+
+Custom Elements могут иметь lifecycle callbacks, например:
+
+```js
+connectedCallback() {
+  // элемент добавлен в документ
+}
+```
+
+или:
+
+```js
+disconnectedCallback() {
+  // элемент удалён из документа
+}
+```
+
+Часто Custom Element используется вместе с Shadow DOM:
+
+```js
+class UserCard extends HTMLElement {
+  constructor() {
+    super();
+
+    const shadow =
+      this.attachShadow({
+        mode: 'open'
+      });
+
+    shadow.innerHTML = `
+      <p>User</p>
+    `;
+  }
+}
+```
+
+Но Shadow DOM не является обязательным условием для Custom Element.
+
+#### Короче
+
+Custom Elements позволяют создавать собственные HTML-элементы:
+
+```html
+<user-card></user-card>
+```
+
+Они регистрируются через:
+
+```js
+customElements.define()
+```
+
+и могут иметь собственное поведение и lifecycle.
+
+---
+
+### 18. Что такое declarative commands и для чего используются `command` и `commandfor`?
+
+**Declarative commands** позволяют связать `<button>` с другим интерактивным элементом и выполнить стандартное действие **декларативно через HTML**, без собственного обработчика `click` для ряда встроенных сценариев.
+
+Для этого используются атрибуты:
+
+```text
+commandfor
+command
+```
+
+### `commandfor`
+
+Указывает, каким элементом управляет кнопка.
+
+Значением является `id` целевого элемента.
+
+```html
+<button commandfor="my-dialog">
+  Открыть
+</button>
+
+<dialog id="my-dialog">
+  ...
+</dialog>
+```
+
+### `command`
+
+Указывает, **какое действие** нужно выполнить над этим элементом.
+
+Например:
+
+```html
+<button
+  commandfor="my-dialog"
+  command="show-modal"
+>
+  Открыть
+</button>
+
+<dialog id="my-dialog">
+  <button
+    commandfor="my-dialog"
+    command="close"
+  >
+    Закрыть
+  </button>
+</dialog>
+```
+
+Здесь браузер может выполнить стандартное управление dialog без кода вида:
+
+```js
+button.addEventListener('click', () => {
+  dialog.showModal();
+});
+```
+
+Для `<dialog>` поддерживаются команды вроде:
+
+```text
+show-modal
+close
+request-close
+```
+
+Declarative commands также интегрируются с Popover API.
+
+Например:
+
+```html
+<button
+  commandfor="menu"
+  command="toggle-popover"
+>
+  Меню
+</button>
+
+<div
+  id="menu"
+  popover
+>
+  ...
+</div>
+```
+
+Для popover существуют встроенные команды вроде:
+
+```text
+show-popover
+hide-popover
+toggle-popover
+```
+
+`commandfor` можно рассматривать как более общий механизм по сравнению с `popovertarget`: он предназначен не только для popovers.
+
+В современной реализации также существует `command` event, который позволяет обрабатывать пользовательские команды, когда стандартных встроенных действий недостаточно.
+
+#### Короче
+
+Declarative commands позволяют кнопке управлять другим элементом через HTML:
+
+```html
+<button
+  commandfor="dialog"
+  command="show-modal"
+>
+  Открыть
+</button>
+```
+
+```text
+commandfor
+→ какой элемент
+
+command
+→ какое действие выполнить
+```
+
+Это позволяет реализовывать некоторые взаимодействия с `dialog` и `popover` без собственного `click`-обработчика.
