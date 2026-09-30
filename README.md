@@ -1,12 +1,13 @@
 # Frontend Engineering Roadmap
 
-A structured roadmap toward frontend systems engineering.
+My roadmap for learning frontend development and tracking my progress.
 
 ---
 
-## Stage 0 — Web Foundations
+## Step 1 — HTML & CSS
 
-### Core Web
+### Fundamentals
+
 - [x] Semantic HTML
 - [x] CSS Fundamentals
 - [x] Flexbox
@@ -16,166 +17,141 @@ A structured roadmap toward frontend systems engineering.
 - [ ] Accessibility (WCAG & ARIA)
 
 ### Workflow
+
 - [x] Git
 - [x] GitHub
 - [x] Figma
 - [x] Vercel
-- [ ] AI-assisted Development
 
 ### Knowledge Base
+
 - [x] HTML
 - [ ] CSS
 - [ ] SCSS
 
 [Open knowledge base →](./knowledge-base/README.md)
 
-### Projects (4 / 5)
-* [x] 0.0 Woodendot Landing
-* [x] 0.1 Developer Blog
-* [x] 0.2 Stir Landing
-* [x] 0.3 Jewelry Store
-* [ ] 0.4 Project
+### Projects
+
+- [x] Woodendot Landing
+- [x] Developer Blog
+- [x] Stir Landing
+- [x] Jewelry Store
+- [ ] Project
 
 ---
 
-## Stage 1 — JavaScript Fundamentals
+## Step 2 — JavaScript
 
-* [ ] Interactive Landing Page
-* [ ] Image Slider
-* [ ] Modal Window
-* [ ] Todo App
-* [ ] Weather App
+- [ ] JavaScript Fundamentals
+- [ ] DOM
+- [ ] Events
+- [ ] Asynchronous JavaScript
+- [ ] Working with APIs
 
-Progress: **0 / 5**
+### Projects
 
----
-
-## Stage 2 — React Fundamentals
-
-* [ ] React Landing Page
-* [ ] Movie Search App
-* [ ] Notes App
-* [ ] Shopping Cart
-* [ ] Dashboard
-
-Progress: **0 / 5**
+- [ ] Interactive Landing Page
+- [ ] Image Slider
+- [ ] Todo App
+- [ ] Weather App
 
 ---
 
-## Stage 3 — React Ecosystem
+## Step 3 — TypeScript
 
-* [ ] TypeScript App
-* [ ] API Integration Project
-* [ ] Authentication Project
-* [ ] Redux Toolkit Project
-* [ ] Large SPA
-
-Progress: **0 / 5**
+- [ ] TypeScript Fundamentals
+- [ ] Types and Interfaces
+- [ ] Functions and Generics
+- [ ] TypeScript with JavaScript projects
 
 ---
 
-## Stage 4 — Job Ready Portfolio
+## Step 4 — React
 
-* [ ] Portfolio Website
-* [ ] Full Featured React Application
-* [ ] Production-Level Project
+- [ ] React Fundamentals
+- [ ] Components
+- [ ] Props and State
+- [ ] Hooks
+- [ ] Forms
+- [ ] Routing
+- [ ] API Integration
 
-Progress: **0 / 3**
+### Projects
+
+- [ ] React App
+- [ ] Movie Search App
+- [ ] Notes App
+- [ ] Shopping Cart
+- [ ] Dashboard
 
 ---
 
-## Completed Projects
+## Step 5 — Frontend Development
 
-### 0.0 Woodendot Landing ✅
+- [ ] Advanced React
+- [ ] State Management
+- [ ] Testing
+- [ ] Next.js
+- [ ] Authentication
+- [ ] Performance
+- [ ] Accessibility
+- [ ] Frontend Architecture
+
+---
+
+# Projects
+
+## Woodendot Landing
 
 **Completed:** May 2026
 
-**Skills practiced:**
-- Semantic HTML
-- CSS Architecture
-- BEM Methodology
-- Flexbox
-- CSS Grid
-- Responsive Design
-- Burger Menu
-- Git & GitHub
-- Vercel Deployment
+HTML · CSS · BEM · Flexbox · Grid · Responsive Design
 
-**GitHub Repository:**
+**GitHub:**  
 https://github.com/KamDiaV/woodendot-landing
 
-**Live Demo:**
+**Live:**  
 https://woodendot-landing.vercel.app
 
 ---
 
-### 0.1 Developer Blog ✅
+## Developer Blog
 
 **Completed:** June 2026
 
-**Skills practiced:**
-- Semantic HTML
-- CSS Architecture
-- BEM Methodology
-- Flexbox
-- Responsive Design
-- Multi-page Layout
-- Reusable Components
-- Git & GitHub
-- Vercel Deployment
+HTML · CSS · BEM · Flexbox · Responsive Design · Multi-page Layout
 
-**GitHub Repository:**
+**GitHub:**  
 https://github.com/KamDiaV/developer-blog
 
-**Live Demo:**
+**Live:**  
 https://developer-blog-mu.vercel.app
 
 ---
 
-### 0.2 Stir Landing ✅
+## Stir Landing
 
 **Completed:** July 2026
 
-**Skills practiced:**
-- Semantic HTML
-- CSS Architecture
-- BEM Methodology
-- Flexbox
-- CSS Grid
-- Responsive Design
-- Section-Based CSS Structure
-- Complex Landing Page Layout
-- Git & GitHub
-- Vercel Deployment
+HTML · CSS · BEM · Flexbox · Grid · Responsive Design
 
-**GitHub Repository:**
+**GitHub:**  
 https://github.com/KamDiaV/stir-landing
 
-**Live Demo:**
+**Live:**  
 https://stir-landing.vercel.app
 
 ---
 
-### 0.3 Jewelry Store ✅
+## Jewelry Store
 
 **Completed:** September 2026
 
-**Skills practiced:**
-- Semantic HTML
-- SCSS Architecture
-- BEM Methodology
-- Flexbox
-- CSS Grid
-- Responsive Design
-- Multi-page Layout
-- Reusable Components
-- SCSS Variables and Mixins
-- Blog and Article Layouts
-- Git & GitHub
-- Vercel Deployment
+HTML · SCSS · BEM · Flexbox · Grid · Responsive Design · Multi-page Layout
 
-**GitHub Repository:**
+**GitHub:**  
 https://github.com/KamDiaV/jewelry-store
 
-**Live Demo:**
-https://jewelry-store-flame-nine.vercel.app/
+**Live:**  
+https://jewelry-store-flame-nine.vercel.app
