@@ -1,6 +1,6 @@
-# Frontend Systems Engineering Journey 2.0 
+# Frontend Engineering Roadmap
 
-My long-term roadmap to becoming a frontend systems engineer.
+A structured roadmap toward frontend systems engineering.
 
 ---
 
@@ -46,7 +46,11 @@ My long-term roadmap to becoming a frontend systems engineer.
 
 - [ ] CSS
 
+- [I. База — 20](./theory/css/base.md)
+
 - [ ] SCSS
+
+- [I. База](./theory/scss/base.md)
 
 #### Projects (4 / 5)
 * [x] 0.0 Woodendot Landing
