@@ -4,9 +4,9 @@ A structured roadmap toward frontend systems engineering.
 
 ---
 
-### Stage 0 — Web Foundations (HTML & CSS)
+## Stage 0 — Web Foundations
 
-#### HTML & CSS
+### Core Web
 - [x] Semantic HTML
 - [x] CSS Fundamentals
 - [x] Flexbox
@@ -15,44 +15,21 @@ A structured roadmap toward frontend systems engineering.
 - [x] SCSS
 - [ ] Accessibility (WCAG & ARIA)
 
-#### Workflow
+### Workflow
 - [x] Git
 - [x] GitHub
 - [x] Figma
 - [x] Vercel
 - [ ] AI-assisted Development
 
-#### Theory & Interview Preparation
-
-- [x]  HTML
-
-- [I. База — 17](./theory/html/base.md)
-- [II.Структура HTML-документа — 15](./theory/html/document-structure.md)
-- [III. Семантическая HTML-разметка — 20](./theory/html/semantic-html.md)
-- [IV. Заголовки и структура контента — 10](./theory/html/headings-content-structure.md)
-- [V. Ссылки и навигация — 10](./theory/html/links-navigation.md)
-- [VI. Изображения и медиа — 14](./theory/html/images-media.md)
-- [VII. Формы — 14](./theory/html/forms.md)
-
-- [x] Advanced HTML
-
-- [VIII. Accessibility и ARIA — 21](./theory/html/accessibility-aria.md)
-- [IX. Таблицы — 7](./theory/html/tables.md)
-- [X. Современный HTML — 18](./theory/html/modern-html.md)
-
-- [x] HTML Practice & Interview Cases
-
-- [XI. Практические вопросы — 12](./theory/html/practical-questions.md)
-
+### Knowledge Base
+- [x] HTML
 - [ ] CSS
-
-- [I. База — 20](./theory/css/base.md)
-
 - [ ] SCSS
 
-- [I. База](./theory/scss/base.md)
+[Open knowledge base →](./knowledge-base/README.md)
 
-#### Projects (4 / 5)
+### Projects (4 / 5)
 * [x] 0.0 Woodendot Landing
 * [x] 0.1 Developer Blog
 * [x] 0.2 Stir Landing
@@ -61,7 +38,7 @@ A structured roadmap toward frontend systems engineering.
 
 ---
 
-### Stage 1 — JavaScript Fundamentals
+## Stage 1 — JavaScript Fundamentals
 
 * [ ] Interactive Landing Page
 * [ ] Image Slider
@@ -73,7 +50,7 @@ Progress: **0 / 5**
 
 ---
 
-### Stage 2 — React Fundamentals
+## Stage 2 — React Fundamentals
 
 * [ ] React Landing Page
 * [ ] Movie Search App
@@ -85,7 +62,7 @@ Progress: **0 / 5**
 
 ---
 
-### Stage 3 — React Ecosystem
+## Stage 3 — React Ecosystem
 
 * [ ] TypeScript App
 * [ ] API Integration Project
@@ -97,7 +74,7 @@ Progress: **0 / 5**
 
 ---
 
-### Stage 4 — Job Ready Portfolio
+## Stage 4 — Job Ready Portfolio
 
 * [ ] Portfolio Website
 * [ ] Full Featured React Application
