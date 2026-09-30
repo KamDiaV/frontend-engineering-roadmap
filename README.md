@@ -37,7 +37,6 @@ My roadmap for learning frontend development and tracking my progress.
 - [x] Developer Blog
 - [x] Stir Landing
 - [x] Jewelry Store
-- [ ] Project
 
 ---
 
