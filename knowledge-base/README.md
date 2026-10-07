@@ -30,8 +30,15 @@ A structured collection of notes, interview questions and practical frontend con
 
 ## CSS
 
+### Fundamentals
+
 - [I. База — 20](../knowledge-base/css/base.md)
 - [II. Селекторы — 24](../knowledge-base/css/selectors.md)
+- [III. Специфичность и каскад — 12](../knowledge-base/css/cascade-specificity.md)
+
+### Advanced CSS
+
+### Practice & Interview Cases
 
 ---
 
