@@ -36,6 +36,7 @@ A structured collection of notes, interview questions and practical frontend con
 - [II. Селекторы — 24](../knowledge-base/css/selectors.md)
 - [III. Специфичность и каскад — 12](../knowledge-base/css/cascade-specificity.md)
 - [IV. Box Model — 16](../knowledge-base/css/box-model.md)
+- [V. Display и поток документа — 13](../knowledge-base/css/display-flow.md)
 
 ### Advanced CSS
 
