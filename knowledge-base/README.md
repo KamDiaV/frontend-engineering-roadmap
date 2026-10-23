@@ -39,6 +39,7 @@ A structured collection of notes, interview questions and practical frontend con
 - [V. Display и поток документа — 13](../knowledge-base/css/display-flow.md)
 - [VI. Размеры и единицы измерения — 15](../knowledge-base/css/units-sizing.md)
 - [VII. Позиционирование — 14](../knowledge-base/css/positioning.md)
+- [VIII. Flexbox — 19](../knowledge-base/css/flexbox.md)
 
 ### Advanced CSS
 
