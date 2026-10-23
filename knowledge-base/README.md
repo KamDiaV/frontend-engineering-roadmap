@@ -38,6 +38,7 @@ A structured collection of notes, interview questions and practical frontend con
 - [IV. Box Model — 16](../knowledge-base/css/box-model.md)
 - [V. Display и поток документа — 13](../knowledge-base/css/display-flow.md)
 - [VI. Размеры и единицы измерения — 15](../knowledge-base/css/units-sizing.md)
+- [VII. Позиционирование — 14](../knowledge-base/css/positioning.md)
 
 ### Advanced CSS
 
