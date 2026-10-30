@@ -41,6 +41,7 @@ A structured collection of notes, interview questions and practical frontend con
 - [VII. Позиционирование — 14](../knowledge-base/css/positioning.md)
 - [VIII. Flexbox — 19](../knowledge-base/css/flexbox.md)
 - [IX. CSS Grid — 22](../knowledge-base/css/grid.md)
+- [X. Responsive Design — 17](../knowledge-base/css/responsive-design.md)
 
 ### Advanced CSS
 
