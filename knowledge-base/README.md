@@ -43,6 +43,7 @@ A structured collection of notes, interview questions and practical frontend con
 - [IX. CSS Grid — 22](../knowledge-base/css/grid.md)
 - [X. Responsive Design — 17](../knowledge-base/css/responsive-design.md)
 - [XI. Текст и типографика — 16](../knowledge-base/css/typography.md)
+- [XII. Цвета, фон и границы — 16](../knowledge-base/css/visual-styles.md)
 
 ### Advanced CSS
 
